@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="address" class="com.sunita.Address">
+    <property name="street" value="Panchabati Tala"></property>
+    <property name="city" value=" Kolkata"></property>
+    <property name="state" value=" West Bengal"></property>
+    <property name="zip" value="700065"></property>
+    <property name="country" value="India"></property>
+    
+    </bean>
+    
+    <bean id="obj" class="com.sunita.Customer">
+     <property name="customerId" value="003 "></property>
+     <property name="customerName" value=" Sunita Mondal"></property>
+     <property name="customerContact" value="0987654321 "></property>
+     <property name="customerAddress" ref="address"></property>
+     
+    </bean>
+
+</beans>
